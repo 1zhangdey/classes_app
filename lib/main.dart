@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ClassBuilder.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'IconWidgetBuilder.dart';
 
 void main() => runApp(Scheduler());
 

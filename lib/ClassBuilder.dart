@@ -1,11 +1,8 @@
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter/material.dart';
 
-
-
-
 class ClassBuilder extends StatelessWidget {
-  ClassBuilder({this.appbartext,this.url});
+  ClassBuilder({this.appbartext, this.url});
   final String url;
   final String appbartext;
   @override
@@ -22,12 +19,12 @@ class ClassBuilder extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.white,
       ),
-      body: Webpage(classURL: url,),
+      body: Webpage(
+        classURL: url,
+      ),
     );
   }
 }
-
-
 
 class Webpage extends StatelessWidget {
   Webpage({this.classURL});
