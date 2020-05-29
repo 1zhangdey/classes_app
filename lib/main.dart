@@ -27,7 +27,10 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Center(
-          child: Text("Classes", style: TextStyle(color: Colors.black, fontSize: 32),),
+          child: Text(
+            "Classes",
+            style: TextStyle(color: Colors.black, fontSize: 32),
+          ),
         ),
       ),
       body: Container(
@@ -43,28 +46,10 @@ class _HomepageState extends State<Homepage> {
               SizedBox(
                 width: double.infinity,
               ),
-              ButtonTheme(
-                minWidth: 100,
-                height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.black, width: 3),
-                      borderRadius: BorderRadius.circular(30)),
-                  highlightColor: Colors.black,
-                  color: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Weight Training",url: "https://classroom.google.com/u/1/c/NTYwMjE2MjQxMTZa",),
-                      ),
-                    );
-                  },
-                  child: Icon(
-                    Icons.fitness_center,
-                    color: Colors.black,
-                  ),
-                ),
+              Button(
+                icon: Icons.fitness_center,
+                appbartext: "Weight Training",
+                url: "https://classroom.google.com/u/1/c/NTYwMjE2MjQxMTZa",
               ),
               Container(
                 width: 160,
@@ -79,28 +64,10 @@ class _HomepageState extends State<Homepage> {
               SizedBox(
                 height: 50,
               ),
-              ButtonTheme(
-                minWidth: 100,
-                height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.black, width: 3),
-                      borderRadius: BorderRadius.circular(30)),
-                  highlightColor: Colors.black,
-                  color: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Computer Science", url: "https://classroom.google.com/u/1/c/NjYyMjY4ODI5MDBa",),
-                      ),
-                    );
-                  },
-                  child: Icon(
-                    Icons.computer,
-                    color: Colors.black,
-                  ),
-                ),
+              Button(
+                url: "https://classroom.google.com/u/1/c/NjYyMjY4ODI5MDBa",
+                appbartext: "Computer Science",
+                icon: Icons.computer,
               ),
               Container(
                 width: 170,
@@ -115,28 +82,10 @@ class _HomepageState extends State<Homepage> {
               SizedBox(
                 height: 50,
               ),
-              ButtonTheme(
-                minWidth: 100,
-                height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.black, width: 3),
-                      borderRadius: BorderRadius.circular(30)),
-                  highlightColor: Colors.black,
-                  color: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Chemistry", url: "https://classroom.google.com/u/1/c/NjYyMjY4ODI5MDBa",),
-                      ),
-                    );
-                  },
-                  child: Icon(
-                    Icons.scatter_plot,
-                    color: Colors.black,
-                  ),
-                ),
+              Button(
+                appbartext: "Chemistry",
+                url: "https://classroom.google.com/u/1/c/NjYyMjY4ODI5MDBa",
+                icon: Icons.scatter_plot,
               ),
               Container(
                 width: 130,
@@ -151,28 +100,10 @@ class _HomepageState extends State<Homepage> {
               SizedBox(
                 height: 50,
               ),
-              ButtonTheme(
-                minWidth: 100,
-                height: 40,
-                child: RaisedButton(
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide(color: Colors.black, width: 3),
-                      borderRadius: BorderRadius.circular(30)),
-                  highlightColor: Colors.black,
-                  color: Colors.white,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Math", url:  "https://hcdsb.elearningontario.ca/d2l/home/14773715",),
-                      ),
-                    );
-                  },
-                  child: Icon(
-                    Icons.add,
-                    color: Colors.black,
-                  ),
-                ),
+              Button(
+                appbartext: "Math",
+                url: "https://hcdsb.elearningontario.ca/d2l/home/14773715",
+                icon: Icons.add,
               ),
               Container(
                 width: 80,
