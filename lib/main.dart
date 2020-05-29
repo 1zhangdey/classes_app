@@ -55,7 +55,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Weight Training",),
+                        builder: (context) => ClassBuilder(appbartext: "Weight Training",url: "https://classroom.google.com/u/1/c/NTYwMjE2MjQxMTZa",),
                       ),
                     );
                   },
@@ -91,7 +91,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Computer Science",),
+                        builder: (context) => ClassBuilder(appbartext: "Computer Science", url: "https://classroom.google.com/u/1/c/NjYyMjY4ODI5MDBa",),
                       ),
                     );
                   },
@@ -127,7 +127,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Chemistry",),
+                        builder: (context) => ClassBuilder(appbartext: "Chemistry", url: "https://classroom.google.com/u/1/c/NjYyMjY4ODI5MDBa",),
                       ),
                     );
                   },
@@ -163,7 +163,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => ClassBuilder(appbartext: "Math",),
+                        builder: (context) => ClassBuilder(appbartext: "Math", url:  "https://hcdsb.elearningontario.ca/d2l/home/14773715",),
                       ),
                     );
                   },
