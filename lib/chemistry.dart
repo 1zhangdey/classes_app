@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class Chemistry extends StatefulWidget {
+class ClassBuilder extends StatefulWidget {
   @override
   _SecondRouteState createState() => _SecondRouteState();
 }
 
-class _SecondRouteState extends State<Chemistry> {
+
+class _SecondRouteState extends State<ClassBuilder> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

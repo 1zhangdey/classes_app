@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:classes/chemistry.dart';
-import 'package:classes/computerscience.dart';
-import 'package:classes/math.dart';
-import 'package:classes/weighttraining.dart';
+import 'ClassBuilder.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(Scheduler());
@@ -58,7 +55,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Weighttraining(),
+                        builder: (context) => ClassBuilder(appbartext: "Weight Training",),
                       ),
                     );
                   },
@@ -94,7 +91,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Weighttraining1(),
+                        builder: (context) => ClassBuilder(appbartext: "Computer Science",),
                       ),
                     );
                   },
@@ -130,7 +127,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Chemistry(),
+                        builder: (context) => ClassBuilder(appbartext: "Chemistry",),
                       ),
                     );
                   },
@@ -166,7 +163,7 @@ class _HomepageState extends State<Homepage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Math(),
+                        builder: (context) => ClassBuilder(appbartext: "Math",),
                       ),
                     );
                   },
