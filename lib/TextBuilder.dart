@@ -9,9 +9,9 @@ class TextBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        child: Text("Weight Training",
+        child: Text(text,
             style: GoogleFonts.getFont("Lato",
-                fontSize: 20, fontWeight: FontWeight.bold, backgroundColor: Colors.white)),
+                fontSize: 25, fontWeight: FontWeight.bold, backgroundColor: Colors.white)),
       ),
     );
   }
